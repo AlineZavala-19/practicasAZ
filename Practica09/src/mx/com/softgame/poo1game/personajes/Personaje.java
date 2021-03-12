@@ -53,5 +53,6 @@ public class Personaje{
 				iguales = true;
 			}
 		}
+		return iguales;
 	}
 }
