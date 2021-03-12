@@ -6,7 +6,7 @@ public class Zombie extends Personaje{
 	//constructores
 	public Zombie(String nombre, int vida, boolean ataque){
 		super(nombre,vida);
-		this ataque = ataque;
+		this.ataque = ataque;
 	}
 	public Zombie(String nombre, boolean ataque){
 		this(nombre,3,ataque);
