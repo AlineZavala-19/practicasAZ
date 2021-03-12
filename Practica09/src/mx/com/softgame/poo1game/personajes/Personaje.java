@@ -1,8 +1,8 @@
 package mx.com.softgame.poo1game.personajes;
 public class Personaje{
 	//atributos
-	private String nombre;
-	private int vida;
+	protected String nombre;
+	protected int vida;
 	//constructores
 	public Personaje (String nombre, int vida){
 		this.nombre = nombre;
@@ -18,7 +18,7 @@ public class Personaje{
 	public int getVida(){
 		return vida;
 	}
-	public String getDetalle(){
+	public String toString(){
 		return nombre + "\t" + vida; 
 	}
 	public void setNombre(String nombre){
