@@ -45,11 +45,11 @@ public class Personaje{
 			this.vida -= decrecer; 
 		}
 	}
-	public boolean equals(Object o){
+	public boolean equals(Object x){
 		boolean iguales = false;
-		if(o != null && o instanceof Personaje){
-			Personaje tmp = (Personaje) o;
-			if (nombre.equals(tmp) && vida == tmp.vida){
+		if(x != null && x instanceof Personaje){
+			Personaje y = (Personaje) x;
+			if (nombre.equals(y) && vida == y.vida){
 				iguales = true;
 			}
 		}
