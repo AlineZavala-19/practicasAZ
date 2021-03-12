@@ -1,5 +1,7 @@
 package mx.com.softgame.poo1game.pruebas;
-import mx.com.softgame.poo1game.personajes.*;
+import mx.com.softgame.poo1game.personajes.Personaje;
+import mx.com.softgame.poo1game.personajes.buenos.Planta;
+import mx.com.softgame.poo1game.personajes.malos.Zombie;
 public class PruebaHerencia{
 	public static void main(String[] args){
 		Personaje per01 = new Personaje("Valeria",99);
@@ -12,24 +14,24 @@ public class PruebaHerencia{
 		Zombie zom02 = new Zombie("Eduardo",true);
 		Zombie zom03 = new Zombie("Esmeralda");
 
-		Personaje arreglo[] = {per01,per02,plan01,plan02,plan03,plan04,zom01,zom02,zom03}
+		Personaje arreglo[] = {per01,per02,plan01,plan02,plan03,plan04,zom01,zom02,zom03};
 
 		for (Personaje i: arreglo){
-			System.out.printl(i.getDetalle());
+			System.out.print(i.getDetalle());
 			if (i instanceof Planta){
-				System.out.printl("Soy planta");
+				System.out.print("Soy planta");
 			}
 			if (i instanceof Zombie){
-				System.out.printl("Soy zombie");
+				System.out.print("Soy zombie");
 			}
 			int decrecer = (int)(Math.random()*10);
 			i.decVida(decrecer);
-			System.out.printl(i.getDetalle());
+			System.out.print(i.getDetalle());
 						if (i instanceof Planta){
-				System.out.printl("Soy planta");
+				System.out.print("Soy planta");
 			}
 			if (i instanceof Zombie){
-				System.out.printl("Soy zombie");
+				System.out.print("Soy zombie");
 			}
 		}
 	}
