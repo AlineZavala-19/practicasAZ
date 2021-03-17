@@ -19,7 +19,7 @@ public class Personaje{
 		return vida;
 	}
 	public String toString(){
-		return nombre + "\t" + vida; 
+		return nombre + " " + vida; 
 	}
 	public void setNombre(String nombre){
 		if (nombre.length() >=3 && nombre.length() < 10){
@@ -47,9 +47,9 @@ public class Personaje{
 	}
 	public boolean equals(Object x){
 		boolean iguales = false;
-		if(x != null && x instanceof Personaje){
+		if(x != null && (x instanceof Personaje)){
 			Personaje y = (Personaje) x;
-			if (nombre.equals(y) && vida == y.vida){
+			if (this.nombre.equals(y.nombre) && vida == y.vida){
 				iguales = true;
 			}
 		}
