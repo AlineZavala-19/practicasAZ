@@ -37,7 +37,7 @@ public class Planta extends Personaje{
 		boolean iguales = false;
 		if ((x != null) && (x instanceof Planta)){
 			Planta y = (Planta) x;
-			if (escudo == y.escudo){
+			if (this.nombre.equals(y.nombre) && vida == y.vida && escudo == y.escudo){
 				iguales = true;
 			}
 		}
