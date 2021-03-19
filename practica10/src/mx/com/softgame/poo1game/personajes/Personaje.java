@@ -24,7 +24,7 @@ public class Personaje{
 		return vida;
 	}
 	public String toString(){
-		return id + nombre + " " + vida; 
+		return id + " " + nombre + " " + vida; 
 	}
 	public void setNombre(String nombre){
 		if (nombre.length() >=3 && nombre.length() < 10){
