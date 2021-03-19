@@ -61,6 +61,6 @@ public class Personaje{
 		return iguales;
 	}
 	public final String getIdVida(){
-		return (id + vida);
+		return id + " " + vida;
 	}
 }
