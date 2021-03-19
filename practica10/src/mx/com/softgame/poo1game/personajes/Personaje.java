@@ -14,7 +14,7 @@ public class Personaje{
 		this(nombre,3);
 	}
 	public Personaje(int id){
-		this.id = getID();
+		this.id = Utilidad.getID();
 	}
 	//metodos
 	public String getNombre(){
@@ -61,7 +61,6 @@ public class Personaje{
 		return iguales;
 	}
 	public final String getIdVida(){
-		vida = (String) vida;
 		return (id + vida);
 	}
 }
