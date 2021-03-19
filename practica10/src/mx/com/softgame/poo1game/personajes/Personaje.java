@@ -12,7 +12,7 @@ public class Personaje{
 		this.id = getID();
 	}
 	public Personaje (String nombre){
-		this(nombre,3);
+		this(nombre,3,id);
 	}
 	//metodos
 	public String getNombre(){
@@ -59,6 +59,7 @@ public class Personaje{
 		return iguales;
 	}
 	public final String getIdVida(){
+		vida = (String) vida;
 		return (id + vida);
 	}
 }
