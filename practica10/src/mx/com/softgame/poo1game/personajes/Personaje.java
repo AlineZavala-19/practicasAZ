@@ -4,7 +4,7 @@ public class Personaje{
 	//atributos
 	protected String nombre;
 	protected int vida;
-	private int id;
+	private final int id;
 	//constructores
 	public Personaje (String nombre, int vida, int id){
 		this.nombre = nombre;
@@ -58,7 +58,7 @@ public class Personaje{
 		}
 		return iguales;
 	}
-	public static String getIdVida(){
+	public final String getIdVida(){
 		return (id + vida);
 	}
 }
