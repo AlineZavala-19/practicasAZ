@@ -12,7 +12,7 @@ public class Personaje{
 		this.id = getID();
 	}
 	public Personaje (String nombre){
-		this(nombre,3,Utileria.getID());
+		this(nombre,3);
 	}
 	//metodos
 	public String getNombre(){
