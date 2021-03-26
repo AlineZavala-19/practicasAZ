@@ -13,4 +13,7 @@ public class Tablero{
 		}
 		return result;
 	}
+	private static boolean delPersonaje(){
+		
+	}
 }
