@@ -44,4 +44,9 @@ public class Planta extends Personaje{
 		}
 		return iguales;
 	}
+		public void setNombre(String nombre);{
+		if (nombre.length() >=5 && nombre.length() <= 10){
+			this.nombre = nombre;
+		}
+	}
 }
