@@ -35,11 +35,22 @@ public class Zombie extends Personaje{
 			super.decVida(decrecer*2);
 		}
 	}
-	public boolean equals(Object x){
+	/*public boolean equals(Object x){
 		boolean iguales = false;
 		if (super.equals(x) && x instanceof Zombie){
 			Zombie y = (Zombie) x;
 			if (ataque == y.ataque){
+				iguales = true;
+			}
+		}
+		return iguales;
+	}*/
+	//sustitui el metodo equals anterior para no tener que mandar llamar a super, pues me salia error
+	public boolean equals(Object x){
+		boolean iguales = false;
+		if ((x != null) && (x instanceof Zombie)){
+			Zombie y = (Zombie) x;
+			if (this.nombre.equals(y.nombre) && vida == y.vida && ataque == y.ataque){
 				iguales = true;
 			}
 		}
@@ -49,4 +60,10 @@ public class Zombie extends Personaje{
     	getIdVida() in Planta cannot override getIdVida() in Personaje
        		return (getIdVida()+" "+ ataque);
     }*/
+    public void setNombre(String nombre){
+		if (nombre.length() >=3 && nombre.length() <=8){
+			this.nombre = nombre;
+		}
+	}
+
 }
