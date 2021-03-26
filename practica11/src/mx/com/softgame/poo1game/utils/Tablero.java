@@ -8,6 +8,9 @@ public class Tablero{
 	//metodos
 	private static boolean addPersonaje(Personaje p){
 		boolean result = false;
-		if (p )
+		if (idx == -1){
+			result = true;
+		}
+		return result;
 	}
 }
