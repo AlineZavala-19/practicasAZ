@@ -6,16 +6,14 @@ public class Personaje{
 	protected int vida;
 	private final int id;
 	//constructores
-	public Personaje(int id){
-		this.id = Utileria.getID();
-	}
 	public Personaje (String nombre, int vida){
 		this.nombre = nombre;
 		this.vida = vida;
+		id = Utileria.getID();
 	}
-	public Personaje (String nombre){
+	/*public Personaje (String nombre){
 		this(nombre,3);
-	}
+	}*/
 	//metodos
 	public String getNombre(){
 		return nombre;
