@@ -6,5 +6,8 @@ public class Tablero{
 	private static Personaje[] personajes = new Personaje [MAX_LINE];
 
 	//metodos
-
+	private static boolean addPersonaje(Personaje p){
+		boolean result = false;
+		if ()
+	}
 }
