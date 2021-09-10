@@ -45,4 +45,8 @@ public class Zombie extends Personaje{
 		}
 		return iguales;
 	}
+	/*public static String getIdVida(){
+    	getIdVida() in Planta cannot override getIdVida() in Personaje
+       		return (getIdVida()+" "+ ataque);
+    }*/
 }
